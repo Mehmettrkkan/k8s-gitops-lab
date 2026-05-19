@@ -1,6 +1,8 @@
 Vagrant.configure("2") do |config|
   # K8s için stabil olan Ubuntu 22.04 (Jammy) kullanıyoruz
   config.vm.box = "ubuntu/jammy64"
+  # Her makinede ortak ön koşul betiğini root yetkisiyle çalıştır
+  config.vm.provision "shell", path: "setup.sh", privileged: true
 
   # Control Plane (Master Node)
   config.vm.define "master" do |master|
