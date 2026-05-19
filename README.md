@@ -182,9 +182,6 @@ Artık `my-app/nginx.yaml` dosyasında yaptığın **her değişiklik**, GitHub'
 ---
 
 ## ✅ Başarı Kriterleri
-```markdown
-**ArgoCD Canlı Dağıtım Ekranı:**
-![ArgoCD Başarı Ekranı](./images/ArgoCD.png)
 
 Projenin tamamlandığını şu göstergelerle doğrulayabilirsin:
 
